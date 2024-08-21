@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Gato">
+    <meta name="keybords" lang="es" content="estructura,general">
+    <meta name="description" lang="es" content="html y su estructura general">
+    <title>Estructura General</title>
+</head>
+<body>
+    <header>
+        <h1 id="inicio">Bienvenidos a Nuestra Página</h1>
+        <h3>Estructura general del proyecto</h3>
+        <a href="#inicio"><img src="img/logo.png" width="150" height="150" alt="Logotipo"></a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca</a></li>
+                <li><a href="#servicios">Servicios</a></li>  
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Sección principal del contenido-->
+    <main>
+        <section id="acerca">
+      <h2>Acerca de</h2>
+      <p>En esta sección puedes leer sobre quién soy y que hago</p>
+      <img src="img/GATO.jpg" width="300" height="200" alt="Gatito"><br>
+      <a href="#inicio">Volver a Inicio</a>
+      <p>Video Relacionado </p>
+        <video  width="500" height="400" controls src="media/Guitarra Acustica.mp4"></video>
+        </section>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Ofrezco una cantidad se servicios para ayudar a tu negocio a crecer</p>
+            <img src="img/avatar-de-usuario.png" width="600" height="400" alt="avatar"><br>
+            <a href="#servicio">Volver a Inicio</a><br>
+<h3>Escucha este audio</h3><br>
+<audio controls src="media/Guitarra audio.mp3" type="mp3"></audio>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Ponte en contacto por medio de este formulario</p>
+        <div class="contenedor">
+            <h2>Formulario de Contacto</h2>
+            <form action="/enviar formulario" method="post">
+                  <!--nombre-->
+                <div class="formulario">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required minlength="3"
+                  maxlength="50" placeholder="Ingrese su nombre">
+                </div><br>
+                  <!--Correo electrónico-->
+                  <div class="formulario">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder=" tu usuario@gmail.com">
+                  </div><br>
+                   <!--Correo electrónico-->
+                   <div class="telefono">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="506-4454-6523">
+                  </div><br> 
+                  <!--Asunto-->
+                  <div class="formulario">
+                    <label for="asunto">Correo asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required  minlength="5"  maxlength="100" placeholder="Se requiere el mensaje">
+                  </div><br>
+                  <!--Mensaje-->
+                  <div class="formulario">
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje"   required minlength="10" maxlength="500"   placeholder="Escriba aquí su mensaje"></textarea><br>
+                    <input type="submit" value="Enviar">
+                          <!--Enviar-->
+                        </div><br>
+                    </form>
+                          <a href="#inicio">Volver a Inicio</a>
+                <main>
+                    <section>
+                        <!--Barra Lateral-->
+                    </main>  
+                </section>
+                        <aside>
+                        <h3>Noticias recientes</h3>
+                        <p>Ultimas actualizaciones de mis servicios y proyectos</p>
+                        <img src="img/cerrar-sesion.png" width="250" height="150" alt="cerrar">
+                        </aside><br>
+                        <hr>
+                 <!--Pie de página-->
+                 <footer>
+                 <p> &copy; 2024 Estructura html.Todos los derechos reservados</p>
+                 <p><a href="http://www.ina.ac.cr" >Visita nuestra web</a></p><br>
+                 <a href="#inicio">Volver a Inicio</a>
+
+          </footer>
+</body>
+</html>
